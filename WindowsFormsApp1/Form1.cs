@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 //#nullable enable
 
-namespace WindowsFormsApp1
+namespace WindowsFormsApp
 {
     public partial class Form1 : Form
     {
