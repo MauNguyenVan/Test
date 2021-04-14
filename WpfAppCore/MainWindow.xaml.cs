@@ -27,6 +27,7 @@ namespace WpfAppCore
             InitializeComponent();
             OpenFileDialog openFileDialog = new(); openFileDialog.ShowDialog();
             SaveFileDialog saveFileDialog = new SaveFileDialog();
+         
             saveFileDialog.ShowDialog();
         }
     }

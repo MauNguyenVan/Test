@@ -5,18 +5,27 @@ using System.Text;
 using System.Linq;
 using System.Text.Json;
 using System.ComponentModel.DataAnnotations;
+using System.Net;
 
 namespace ConsoleTest
 {
-    
+
     class Program
     {
+        private const string uriTextVersion = "https://drive.google.com/drive/folders/10KUAF7nrogEtV8v2jLCDO9uJ8UlXbJG0";
+
         public static void Main()
         {
-             List<List<int>> l = new List<List<int>>(){new(){1,2,3}, new(){4,5,6}};
-             System.Console.WriteLine(l[1][1]);
-        }       
-    
+         WebClient client = new WebClient();
+         //client.DownloadFile(uriTextVersion,"dfdfdf.txt");
+         var s = client.DownloadString(uriTextVersion);
+         System.Console.WriteLine(s);
+        }
+
+    }
+    static class dsds
+    {
+        string Data(this MyClass instance)
     }
 
 }
