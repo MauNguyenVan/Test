@@ -10,7 +10,6 @@ using System.Diagnostics;
 //#nullable disable
 namespace ConsoleTest
 {
-    
     class Program
     {
 enum ee 
@@ -45,9 +44,5 @@ enum ee
             }
            
         }
-
-
     }
-
-
 }
